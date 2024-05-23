@@ -1,0 +1,197 @@
+/* Temel stiller */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Başlık stilleri */
+.header-orta {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.header-orta h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header-orta p {
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+/* Ana içerik stilleri */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-section h2 {
+  color: #333;
+}
+
+/* Resim bölümü stilleri */
+.image-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mobile-call-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #005e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.image-frame {
+  display: inline-block;
+  border: 3px solid #333333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Mağaza bölümü stilleri */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.shop {
+  flex: 0 0 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.shop h4 {
+  color: #333;
+}
+
+.search-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #097227;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #555;
+}
+
+/* Müşteri referansları bölümü stilleri */
+#customer-reviews {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.customer-card {
+  margin-bottom: 20px;
+}
+
+.customer-card p {
+  color: #333;
+}
+
+.customer-card strong {
+  font-weight: bold;
+}
+
+/* Hizmetler ve referanslar bölümü stilleri */
+#services,
+#customer-reviews {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#services h2,
+#customer-reviews h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Hizmetler ve referanslar bölümü kart stilleri */
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: #333;
+}
+
+.service-card p {
+  color: #555;
+}
+
+/* Hizmet Verdiğimiz Bölgelerimiz bölümü */
+#serving-areas {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#serving-areas h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer bölümü stilleri */
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.footer-content {
+  margin: 0 auto;
+}
+
+/* Link stilleri */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
