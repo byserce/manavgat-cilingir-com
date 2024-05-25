@@ -11,7 +11,7 @@
   <meta name="publisher" content="Manavgat Çilingir">
   <meta name="author" content="Atakan Serce">
   <meta property="og:image" content="https://manavgatcilingir.com.tr/cilingir-fiyat.webp">
-  <meta property="og:image:alt" content="Manavgat Çilingir">
+  <meta property="og:image:alt" content="Manavgat Çilingir dükkanı">
   <meta property="og:title" content="Manavgat Çilingir Anahtarcı | Kapı Açma 180 TL | Manavgat Antalya">
   <meta property="og:description" content="Manavgat Çilingir ve Anahtarcı hizmetleri için 7/24 bize ulaşabilirsiniz. Antalya ve Manavgat'ın her noktasına 15 dakikada kapınızdayız.">
   <meta property="og:url" content="https://manavgatcilingir.com.tr/">
@@ -24,7 +24,7 @@
   <meta name="twitter:title" content="Manavgat Çilingir Anahtarcı | Kapı Açma 180 TL | Manavgat Antalya">
   <meta name="twitter:description" content="Manavgat Çilingir ve Anahtarcı hizmetleri için 7/24 bize ulaşabilirsiniz. Antalya ve Manavgat'ın her noktasına 15 dakikada kapınızdayız.">
   <meta name="twitter:image" content="https://manavgatcilingir.com.tr/cilingir-fiyat.webp">
-  <meta name="twitter:image:alt" content="Manavgat Çilingir">
+  <meta name="twitter:image:alt" content="Manavgat Çilingir dükkanı">
 
   <!-- Sayfa başlığı -->
   <title>Manavgat Çilingir Anahtarcı | Kapı Açma 180 TL | Manavgat Antalya</title>
@@ -76,7 +76,7 @@
     </section>
     <section class="image-section">
       <div class="image-frame">
-        <img src="dükkan.webp" alt="Manavgat Çilingir" width="300" height="150" loading="lazy">
+        <img src="dükkan.webp" alt="Manavgat Çilingir dükkanı" width="300" height="150" loading="lazy">
       </div>
     </section>
 
@@ -220,51 +220,104 @@
     </div>
   </footer>
 
-  <!-- Schema Markup -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Manavgat Çilingir",
-      "image": "https://manavgatcilingir.com.tr/cilingir-fiyat.webp",
-      "@id": "",
-      "url": "https://manavgatcilingir.com.tr",
-      "logo": "https://manavgatcilingir.com.tr/logo.png",
-      "telephone": "+905050366080",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Manavgat Mahallesi",
-        "addressLocality": "Antalya",
-        "postalCode": "07600",
-        "addressCountry": "TR"
-      },
-      "priceRange": "150₺",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 36.7860,
-        "longitude": 31.4460
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/manavgatcilingir",
-        "https://www.instagram.com/manavgatcilingir",
-        "https://twitter.com/manavgatcilingir"
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "name": "Manavgat Çilingir",
+          "image": "https://manavgatcilingir.com.tr/cilingir-fiyat.webp",
+          "@id": "https://manavgatcilingir.com.tr",
+          "url": "https://manavgatcilingir.com.tr",
+          "logo": "https://manavgatcilingir.com.tr/logo.png",
+          "telephone": "+905050366080",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Manavgat Mahallesi",
+            "addressLocality": "Antalya",
+            "postalCode": "07600",
+            "addressCountry": "TR"
+          },
+          "priceRange": "150₺",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 36.7860,
+            "longitude": 31.4460
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "sameAs": [
+            "https://www.facebook.com/manavgatcilingir",
+            "https://www.instagram.com/manavgatcilingir",
+            "https://twitter.com/manavgatcilingir"
+          ]
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Kapı Açma Hizmeti",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Manavgat Çilingir",
+            "url": "https://manavgatcilingir.com.tr"
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Manavgat, Side, Antalya"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "TRY",
+            "price": "180",
+            "url": "https://manavgatcilingir.com.tr"
+          }
+        },
+        {
+          "@type": "Review",
+          "reviewBody": "Manavgat Çilingir ekibi çok hızlı ve profesyonel çalışıyor. Kapımızı açmak için kısa sürede geldiler ve işlem sorunsuz bir şekilde tamamlandı. Üstelik uygun fiyatlı kilit değiştirdiler. Teşekkürler!",
+          "author": {
+            "@type": "Person",
+            "name": "Ali A."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "Manavgat Çilingir",
+            "url": "https://manavgatcilingir.com.tr"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Çilingir Seçerken Nelere Dikkat Etmelisiniz?",
+          "author": {
+            "@type": "Person",
+            "name": "Atakan Serce"
+          },
+          "datePublished": "2024-05-25",
+          "image": "https://manavgatcilingir.com.tr/manavgat.webp",
+          "articleBody": "Manavgat çilingir seçimi yaparken dikkat edilmesi gerekenler hakkında bilgiler. Güvenilir ve hızlı hizmet almak için tüyolar. Manavgat anahtarcı ve çilingir Manavgat hizmetleri hakkında daha fazla bilgi için..."
+        }
       ]
     }
-  </script>
+    </script>
+    
 
   
       <!-- JavaScript for menu toggle -->
