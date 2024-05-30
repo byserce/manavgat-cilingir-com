@@ -475,6 +475,11 @@ a:hover {
   color: #333;
 }
 
+.whatsapp-buttons {
+  display: flex;
+  gap: 10px; /* Butonlar arasındaki boşluk */
+}
+
 .whatsapp-button {
   display: flex;
   align-items: center;
