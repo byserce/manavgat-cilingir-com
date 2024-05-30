@@ -478,8 +478,8 @@ a:hover {
 .whatsapp-button {
   display: flex;
   align-items: center;
-  background-color: #31ce6a;
-  color: white;
+  background-color: #25D366;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
