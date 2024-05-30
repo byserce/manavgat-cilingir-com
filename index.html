@@ -94,10 +94,10 @@
         <img src="whatsapp-seeklogo-3.svg" alt="WhatsApp Logo" class="whatsapp-logo">
         WhatsApp ile mesaj gönder
       </a>
-      <button id="whatsappLocationBtn" class="whatsapp-button">
+      <a href="#" id="whatsappLocationBtnTop" class="whatsapp-button" target="_blank">
         <img src="whatsapp-seeklogo-3.svg" alt="WhatsApp Logo" class="whatsapp-logo">
         WhatsApp ile Konum Paylaş
-      </button>
+      </a>
     </div>   
 
     <section id="contact" class="shop-section">
@@ -117,10 +117,10 @@
           WhatsApp ile mesaj gönder
         </a>        
 
-        <button id="whatsappLocationBtn" class="whatsapp-button">
+        <a href="#" id="whatsappLocationBtnTop" class="whatsapp-button" target="_blank">
           <img src="whatsapp-seeklogo-3.svg" alt="WhatsApp Logo" class="whatsapp-logo">
           WhatsApp ile Konum Paylaş
-        </button>
+        </a>
 
          
         <p>Manavgat en yakın çilingir anahtarcıya ulaşmak için hemen arayın. 15 dakikada yanınızda.</p>
@@ -142,10 +142,10 @@
           WhatsApp ile mesaj gönder
         </a>        
 
-        <button id="whatsappLocationBtn" class="whatsapp-button">
+        <a href="#" id="whatsappLocationBtnTop" class="whatsapp-button" target="_blank">
           <img src="whatsapp-seeklogo-3.svg" alt="WhatsApp Logo" class="whatsapp-logo">
           WhatsApp ile Konum Paylaş
-        </button>
+        </a>
         <p>Side en yakın çilingir anahtarcıya ulaşmak için hemen arayın. 15 dakikada yanınızda.</p>
       </div>
       
@@ -395,16 +395,35 @@
 
 
       // WhatsApp konum paylaşma fonksiyonu
-      document.getElementById('whatsappLocationBtn').addEventListener('click', function() {
+      document.getElementById('whatsappLocationBtnTop').addEventListener('click', function (event) {
+        event.preventDefault();
         if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
+          navigator.geolocation.getCurrentPosition(function (position) {
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
-            var whatsappUrl = `https://wa.me/905050366080?text=Konumum: https://www.google.com/maps?q=${latitude},${longitude}`;
-            window.open(whatsappUrl, '_blank');
+            var locationUrl = `https://wa.me/905050366080?text=Benim%20konumum:%20https://maps.google.com/?q=${latitude},${longitude}`;
+            window.open(locationUrl, '_blank');
+          }, function (error) {
+            alert('Konumunuzu alırken bir hata oluştu.');
           });
         } else {
-          alert("Geolocation API'niz bu tarayıcıda desteklenmiyor.");
+          alert('Tarayıcınız konum bilgisi almayı desteklemiyor.');
+        }
+      });
+  
+      document.getElementById('whatsappLocationBtn').addEventListener('click', function (event) {
+        event.preventDefault();
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var locationUrl = `https://wa.me/905050366080?text=Benim%20konumum:%20https://maps.google.com/?q=${latitude},${longitude}`;
+            window.open(locationUrl, '_blank');
+          }, function (error) {
+            alert('Konumunuzu alırken bir hata oluştu.');
+          });
+        } else {
+          alert('Tarayıcınız konum bilgisi almayı desteklemiyor.');
         }
       });
     </script>
