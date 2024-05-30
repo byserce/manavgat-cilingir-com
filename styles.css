@@ -236,6 +236,17 @@ main {
   transform: translateY(-2px);
 }
 
+.phone-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px; /* Arama butonu ile ikon arasındaki boşluk */
+}
+
+.phone-logo {
+  width: 20px; /* İkon genişliği */
+  height: auto; /* Oranlı yükseklik */
+}
 /* Resim bölümü stilleri */
 .image-section {
   text-align: center;
@@ -464,6 +475,31 @@ a:hover {
   color: #333;
 }
 
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851;
+}
+
+.whatsapp-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 1px;
+}
+
+
 /* Medya sorguları */
 @media (max-width: 768px) {
   .header-orta h1 {
@@ -500,7 +536,7 @@ a:hover {
   }
 
   .image-section {
-    margin-bottom: 30px;
+    margin-bottom: 1px;
   }
 
   #customer-reviews h2,
