@@ -263,23 +263,8 @@ main {
 
 .tooltip {
   position: absolute;
-  top: 40%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 2, 2, 0.7);
-  color: #ffffff;
-  padding: 10 12px;
-  border-radius: 3px;
-  white-space: nowrap;
-  display: none;
-  pointer-events: none;
-  font-size: 10px;
-}
-
-.tooltip1 {
-  position: absolute;
-  top: 45%;
-  left: 13%;
+  top: 46%;
+  left: 53%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 2, 2, 0.7);
   color: #ffffff;
@@ -294,7 +279,64 @@ main {
 .image-section:hover .tooltip  {
   display: block;
 }
+
+.tooltip1 {
+  position: absolute;
+  top: 34%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 2, 2, 0.7);
+  color: #ffffff;
+  padding: 10 12px;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: none;
+  pointer-events: none;
+  font-size: 10px;
+}
+
+
 .image-section:hover .tooltip1  {
+  display: block;
+}
+
+.tooltip2 {
+  position: absolute;
+  top: 35%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 2, 2, 0.7);
+  color: #ffffff;
+  padding: 10 12px;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: none;
+  pointer-events: none;
+  font-size: 10px;
+}
+
+
+.image-section:hover .tooltip2  {
+  display: block;
+}
+
+.tooltip3 {
+  position: absolute;
+  top: 46%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 2, 2, 0.7);
+  color: #ffffff;
+  padding: 10 12px;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: none;
+  pointer-events: none;
+  font-size: 10px;
+}
+
+
+.image-section:hover .tooltip3  {
   display: block;
 }
 
