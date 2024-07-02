@@ -33,7 +33,7 @@ body {
 
 .header-orta h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -305,7 +305,7 @@ main {
 
 .title-section h2 {
   color: #005a0e;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
 }
